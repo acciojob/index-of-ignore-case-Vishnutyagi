@@ -1,8 +1,10 @@
 function indexOfIgnoreCase(s1, s2) {
-	  s1=toUpperCase(s1);
-	s2=toUpperCase(s2);
-	if(s1.indexOf(s2)<s1.length) return s1.indexOf(s2);
-	return -1;
+    // Convert both strings to lowercase to perform a case-insensitive search
+    let lowerS1 = s1.toLowerCase();
+    let lowerS2 = s2.toLowerCase();
+
+    // Use the indexOf method on the lowercase versions of the strings
+    return lowerS1.indexOf(lowerS2);
 }
 
 // Please do not change the code below
