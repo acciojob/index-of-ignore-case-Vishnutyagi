@@ -1,5 +1,8 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+	  s1=toUpperCase(s1);
+	s2=toUpperCase(s2);
+	if(s1.indexOf(s2)<s1.length) return s1.indexOf(s2);
+	return -1;
 }
 
 // Please do not change the code below
